@@ -30,10 +30,12 @@ int main() {
         if (candidateAgeInt > MIN && candidateAgeInt < MAX) {
             std::cout << "you can date my grandchild";
             std::cout << "\n";
-        } else if (candidateAgeInt <= MIN) {
+        } else if (candidateAgeInt <= MIN && candidateAgeInt >= 0) {
             std::cout << " you are to young to date my grandchild" << std::endl;
         } else if (candidateAgeInt >= MAX) {
             std::cout << "you are too old to date my grandchild" << std::endl;
+        } else if (candidateAgeInt < 0) {
+            std::cout << "Please enter a valid integer" << std::endl;
         }
     } catch (std::invalid_argument) {
         std::cout << candidateAgeStr << "is not an integer" << std::endl;
