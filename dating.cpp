@@ -38,7 +38,7 @@ int main() {
             std::cout << "Please enter a valid integer" << std::endl;
         }
     } catch (std::invalid_argument) {
-        std::cout << candidateAgeStr << "is not an integer" << std::endl;
+        std::cout << candidateAgeStr << " is not an integer" << std::endl;
     }
     std::cout << "Thanks for your interest";
     std::cout << "\n";
