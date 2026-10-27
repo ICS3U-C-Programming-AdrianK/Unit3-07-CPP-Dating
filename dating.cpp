@@ -1,9 +1,9 @@
-// copyright (c) 2026 all rights reserved 
-// Created : Adrian student 
+// copyright (c) 2026 all rights reserved
+// Created : Adrian student
 // Date : 26 OCT 2026
 // This programs tells the grandparents if someone is
 // eligible to date their grandchild
-#include <iostream> 
+#include <iostream>
 #include <string>
 
 
@@ -23,10 +23,10 @@ int main() {
 
     // check eligibility
     try {
-        // check if the user entry is integer 
+        // check if the user entry is integer
         int candidateAgeInt = std::stoi(candidateAgeStr);
 
-        // check the candidate age range 
+        // check the candidate age range
         if (candidateAgeInt > MIN && candidateAgeInt < MAX) {
             std::cout << "you can date my grandchild";
             std::cout << "\n";
@@ -38,6 +38,6 @@ int main() {
     } catch (std::invalid_argument) {
         std::cout << candidateAgeStr << "is not an integer" << std::endl;
     }
-    std::cout << "Thanks for your interest" ;
+    std::cout << "Thanks for your interest";
     std::cout << "\n";
 }
